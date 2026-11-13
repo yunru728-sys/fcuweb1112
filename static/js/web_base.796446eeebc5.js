@@ -23,15 +23,25 @@ navItem.forEach(element => {
     }
 });
 
-window.addEventListener('scroll', () => {
-    let img = document.querySelector('#logo');
-    let nav = document.querySelector('.navbar');
+const logo = document.querySelector('#logo');
+const navbar = document.querySelector('.navbar');
+let scrollFrame = null;
+let navIsScaled = false;
 
-    if (window.scrollY > 30) {
-        img.classList.add('scale-img');
-        nav.classList.add('scale-nav');
-    } else {
-        img.classList.remove('scale-img');
-        nav.classList.remove('scale-nav');
+const updateNavigationScale = () => {
+    scrollFrame = null;
+    const shouldScale = window.scrollY > 30;
+    if (shouldScale === navIsScaled || !logo || !navbar) {
+        return;
     }
-});
+
+    navIsScaled = shouldScale;
+    logo.classList.toggle('scale-img', shouldScale);
+    navbar.classList.toggle('scale-nav', shouldScale);
+};
+
+window.addEventListener('scroll', () => {
+    if (scrollFrame === null) {
+        scrollFrame = window.requestAnimationFrame(updateNavigationScale);
+    }
+}, { passive: true });
