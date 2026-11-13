@@ -1,23 +1,26 @@
-let navItem = document.querySelectorAll('.top-nav');
-let active = document.querySelector('.nav-item .nav-link.active');
+const navItem = document.querySelectorAll('.top-nav');
+const active = document.querySelector('.nav-item .nav-link.active');
 
 document.querySelectorAll('.dropdown-btn').forEach(element => {
+    const dropdown = element.parentElement.nextElementSibling;
     element.addEventListener('click', (event) => {
-        element.parentElement.nextElementSibling.classList.toggle('show');
+        dropdown?.classList.toggle('show');
     });
 });
 
 navItem.forEach(element => {
-    if (window.innerWidth >= 992) {
-        element.addEventListener('mouseover', (event) => {
-            element.querySelector('.dropdown-menu')?.classList.add('show');
-            element.querySelector('.nav-link').classList.add('hover');
+    const dropdown = element.querySelector('.dropdown-menu');
+    const navLink = element.querySelector('.nav-link');
+    if (window.matchMedia('(min-width: 992px)').matches) {
+        element.addEventListener('mouseenter', () => {
+            dropdown?.classList.add('show');
+            navLink?.classList.add('hover');
             active?.classList.remove('active');
         });
     
-        element.addEventListener('mouseout', (event) => {
-            element.querySelector('.dropdown-menu')?.classList.remove('show');
-            element.querySelector('.nav-link').classList.remove('hover');
+        element.addEventListener('mouseleave', () => {
+            dropdown?.classList.remove('show');
+            navLink?.classList.remove('hover');
             active?.classList.add('active');
         });
     }

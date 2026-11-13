@@ -724,6 +724,25 @@ footer ul.social-icons {
     object-fit: cover;
 }
 
+.section-index-index #carousel,
+.section-index-index .carousel-inner,
+.section-index-index .carousel-item {
+    aspect-ratio: 1336 / 470;
+}
+
+.section-index-index .carousel-item img {
+    height: 100%;
+}
+
+.section-index-index .fa-solid,
+.section-index-index .fas,
+.section-index-index .far,
+.section-index-index .fab {
+    display: inline-block;
+    min-width: 1em;
+    line-height: 1;
+}
+
 .section-index-index .honor-card .card-img-top {
     width: 100%;
     height: auto;
