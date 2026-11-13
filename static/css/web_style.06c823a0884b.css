@@ -734,6 +734,12 @@ footer ul.social-icons {
     height: 100%;
 }
 
+.section-index-index > .container:nth-of-type(n + 2),
+.section-index-index > .section {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 900px;
+}
+
 .section-index-index .fa-solid,
 .section-index-index .fas,
 .section-index-index .far,

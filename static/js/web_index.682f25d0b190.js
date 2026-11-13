@@ -2,8 +2,6 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     slidesPerView: 'auto',
     loop: true,
-    loopAdditionalSlides: 1,
-    watchSlidesProgress: true,
     autoplay: {
         delay: 2000,
         pauseOnMouseEnter: true,
@@ -14,6 +12,9 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+const videoModal = document.querySelector('#modalForVideo');
+const videoModalContent = videoModal?.querySelector('.modal-content');
+
 document.querySelectorAll('.index-video').forEach(element => {
     element.addEventListener('click', () => {
         swiper.autoplay.stop();
@@ -22,12 +23,16 @@ document.querySelectorAll('.index-video').forEach(element => {
             console.error('Video button is missing data-video-id.');
             return;
         }
-        document.querySelector('#modalForVideo .modal-content').innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+        if (videoModalContent) {
+            videoModalContent.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+        }
     });
 });
 
-document.querySelector('#modalForVideo').addEventListener('hide.bs.modal', () => {
-    document.querySelector('#modalForVideo .modal-content').innerHTML = '';
+videoModal?.addEventListener('hide.bs.modal', () => {
+    if (videoModalContent) {
+        videoModalContent.innerHTML = '';
+    }
     swiper.autoplay.start();
 });
 
