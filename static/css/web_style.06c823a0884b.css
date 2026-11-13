@@ -1042,3 +1042,27 @@ footer ul.social-icons {
     text-decoration: underline;
 }
 
+
+/* Accessibility improvements */
+body a {
+    color: #005a87;
+}
+
+nav .dropdown-item {
+    color: #505050;
+}
+
+nav .dropdown-item:hover,
+nav .dropdown-item:active {
+    color: #303030;
+}
+
+footer,
+footer a,
+footer p {
+    color: #d9e3e6;
+}
+
+footer .social-icons a i {
+    color: #3d4a50;
+}
