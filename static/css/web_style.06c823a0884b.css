@@ -705,7 +705,8 @@ footer ul.social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 360px;
+    height: 100%;
     border: 0;
 }
 

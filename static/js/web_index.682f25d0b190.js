@@ -41,6 +41,7 @@ const initializeSwiper = () => {
             prevEl: '.swiper-button-prev',
         },
     });
+    videoCarousel.classList.add('is-ready');
     return swiper;
 };
 
