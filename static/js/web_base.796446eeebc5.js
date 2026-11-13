@@ -1,5 +1,4 @@
 const navItem = document.querySelectorAll('.top-nav');
-const active = document.querySelector('.nav-item .nav-link.active');
 
 document.querySelectorAll('.dropdown-btn').forEach(element => {
     const dropdown = element.parentElement.nextElementSibling;
@@ -15,13 +14,11 @@ navItem.forEach(element => {
         element.addEventListener('mouseenter', () => {
             dropdown?.classList.add('show');
             navLink?.classList.add('hover');
-            active?.classList.remove('active');
         });
     
         element.addEventListener('mouseleave', () => {
             dropdown?.classList.remove('show');
             navLink?.classList.remove('hover');
-            active?.classList.add('active');
         });
     }
 });

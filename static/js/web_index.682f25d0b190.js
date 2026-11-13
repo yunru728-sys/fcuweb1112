@@ -100,15 +100,3 @@ videoModal?.addEventListener('hide.bs.modal', () => {
     }
     swiper?.autoplay.start();
 });
-
-window.addEventListener('load', () => {
-    let index_about = document.querySelector('.index-about-background');
-    if (!index_about) {
-        return;
-    }
-
-    let bgimg = index_about.dataset.bgimg;
-    if (bgimg) {
-        index_about.style.backgroundImage = `url(${location.origin + bgimg})`;
-    }
-});

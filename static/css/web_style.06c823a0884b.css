@@ -293,10 +293,6 @@ footer ul.social-icons {
     margin-top: 5px;
 }
 
-.section-404-not-found div.row {
-    display: flex;
-}
-
 .section-404-not-found div.text-rwd p {
     font-size: 13px;
     line-height: 26px;
@@ -321,10 +317,6 @@ footer ul.social-icons {
 
 .section-500-error .backbutton {
     margin-top: 5px;
-}
-
-.section-500-error div.row {
-    display: flex;
 }
 
 .section-500-error div.text-rwd p {
@@ -471,10 +463,6 @@ footer ul.social-icons {
 
 .section-about-about .slideInRight.ed {
     transform: translateX(0);
-}
-
-.section-about-about .fifty-years img {
-    height: 20px;
 }
 
 .section-about-about #tab1 {
@@ -696,11 +684,6 @@ footer ul.social-icons {
     text-decoration: none;
 }
 
-.section-index-index .swiper-container {
-    width: 100%;
-    height: 100%;
-}
-
 .section-index-index .swiper-slide {
     display: flex;
     justify-content: center;
@@ -759,42 +742,6 @@ footer ul.social-icons {
     object-fit: cover;
 }
 
-.section-index-index .index-about-backgroundimg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
-}
-
-.section-index-index .index-about-text {
-    background: rgba(255, 255, 255, 0.6);
-    height: 100%;
-    width: 100%;
-    padding: 28px;
-}
-
-.section-index-index .index-about-background {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.section-index-index .index-about-text h1 {
-    font-weight: 700;
-    font-size: 36px;
-}
-
-.section-index-index div.index-about-text p {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.section-index-index div.index-about-text span {
-    font-size: 16px;
-    font-weight: 700;
-    margin-left: 8px;
-}
-
 .section-index-index .time {
     list-style: none;
 }
@@ -842,10 +789,6 @@ footer ul.social-icons {
     margin-bottom: 100px;
 }
 
-.section-index-index .iecs-darkfont i {
-    font-weight: bold;
-}
-
 .section-index-index .card-body {
     padding: 20px 40px;
 }
@@ -856,10 +799,6 @@ footer ul.social-icons {
 
 .section-index-index .card-img-scale:hover {
     transform: scale(1.1);
-}
-
-.section-index-index .card-body h4 {
-    font-size: 20px;
 }
 
 .section-index-index .section-event .card-body .card-title {
