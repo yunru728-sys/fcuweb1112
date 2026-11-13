@@ -1091,3 +1091,62 @@ footer p {
 footer .social-icons a i {
     color: #3d4a50;
 }
+
+/* Increase foreground/background contrast for text and controls. */
+body {
+    color: #333333;
+}
+
+nav .dropdown-btn i,
+nav .category:hover,
+nav .hover,
+nav .active,
+nav .category,
+nav .nav-link.show,
+nav .nav-link:focus,
+nav .nav-link:hover,
+.section-index-index .custom-btn-style,
+.section-feedback-feedback .btn,
+.section-resource-resource .font-style ul a {
+    color: #005f87 !important;
+}
+
+nav .navbar-toggler,
+nav span.entwbtn:hover,
+.section-index-index .custom-btn-style,
+.section-index-index .post-event-date,
+.section-feedback-feedback .btn {
+    background-color: #006b9f;
+    border-color: #006b9f;
+    color: #ffffff !important;
+}
+
+nav .category:hover,
+nav .hover,
+nav .active {
+    box-shadow: 0 3px #005f87;
+}
+
+nav .dropdown-item,
+nav .dropdown-item:hover,
+nav .dropdown-item:active,
+.section-404-not-found div.text-rwd p,
+.section-500-error div.text-rwd p,
+.section-feedback-feedback .solid,
+.section-feedback-feedback article p,
+.section-resource-resource .font-style ul {
+    color: #595959;
+}
+
+.section-index-index .honor-card .card-body p {
+    color: #9a3b30;
+}
+
+.section-index-index .custom-btn-style:hover,
+.section-feedback-feedback article:hover {
+    background-color: #004b6b;
+}
+
+.section-index-index .custom-btn-style:hover {
+    border-color: #004b6b;
+}
