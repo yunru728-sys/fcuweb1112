@@ -17,9 +17,12 @@ var swiper = new Swiper(".mySwiper", {
 document.querySelectorAll('.index-video').forEach(element => {
     element.addEventListener('click', () => {
         swiper.autoplay.stop();
-        let url = element.dataset.url;
-        url = url.split('v=')[1];
-        document.querySelector('#modalForVideo .modal-content').innerHTML = `<iframe src="https://www.youtube.com/embed/${url}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+        let videoId = element.dataset.videoId;
+        if (!videoId) {
+            console.error('Video button is missing data-video-id.');
+            return;
+        }
+        document.querySelector('#modalForVideo .modal-content').innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
     });
 });
 
