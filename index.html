@@ -53,6 +53,33 @@
             min-height: calc(100vh - 450px);
         }
 
+        .section-index-index #carousel,
+        .section-index-index .carousel-inner {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1336 / 470;
+            overflow: hidden;
+        }
+
+        .section-index-index .carousel-item {
+            position: relative;
+            display: none;
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1336 / 470;
+        }
+
+        .section-index-index .carousel-item.active {
+            display: block;
+        }
+
+        .section-index-index .carousel-item img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         .mySwiper {
             position: relative;
             display: block;
@@ -298,7 +325,7 @@
         </nav>
     </header>
 
-    <div role="main" class="main" style="min-height: calc(100vh - 450px)">
+    <div role="main" class="main">
         <h1 class="visually-hidden">逢甲大學資訊工程學系</h1>
         
     <section class="section-index-index">

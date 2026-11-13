@@ -13,11 +13,11 @@ header {
 }
 
 nav #logo {
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 nav .navbar {
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 nav #navbarSupportedContent {
@@ -124,14 +124,14 @@ nav #entw span.entwbtn {
     -webkit-border-radius: 99px;
     -moz-border-radius: 99px;
     border-radius: 99px;
-    transition: all 0.1s linear;
+    transition: background-color 0.1s linear, color 0.1s linear, border-color 0.1s linear;
 }
 
 nav #entw span.entwbtn:hover {
     border: 1px #1b9dff solid;
     background: #1b9dff;
     color: white;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 992px) {
@@ -146,11 +146,11 @@ nav #entw span.entwbtn:hover {
 
     nav .category {
         padding: 4px 0px;
-        transition: all 0.5s ease-in-out;
+        transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
     }
 
     nav .category:hover {
-        transition: all 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         color: #1b9dff;
         box-shadow: 0px 3px #1b9dff;
     }
@@ -263,7 +263,7 @@ footer .social-icons a {
 }
 
 footer .social-icons-facebook a:hover {
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
     background: #3B5A99;
 }
 
@@ -272,7 +272,7 @@ footer .social-icons-facebook a:hover i {
 }
 
 footer .social-icons-location a:hover {
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
     background: #17A9E1;
 }
 
@@ -450,7 +450,7 @@ footer ul.social-icons {
 
 .section-about-about .aos {
     opacity: 0;
-    transition: all 1s;
+    transition: opacity 1s;
 }
 
 .section-about-about .aos.ed {
@@ -851,7 +851,7 @@ footer ul.social-icons {
 }
 
 .section-index-index .card-img-scale {
-    transition: all 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .section-index-index .card-img-scale:hover {
